@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER ganesh.sapte@gmail.com
-RUN chmod +x yum install -y httpd \
+RUN yum install -y httpd \
    zip \
    unzip 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html
