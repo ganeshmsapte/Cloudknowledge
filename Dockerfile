@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER ganesh.m.sapte@gmail.com
-RUN yum install -y httpd \
+RUN yum -y update && yum -y install httpd \
    zip \
    unzip 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page271/blugoon.zip /var/www/html
